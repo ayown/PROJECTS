@@ -21,8 +21,8 @@ A simple and responsive currency converter web application built using HTML, CSS
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/currency-converter.git
-cd currency-converter
+git clone https://github.com/ayown/PROJECTS.git
+cd CURRENCY CONVERTER
 ```
 
 ### Open Locally
@@ -44,9 +44,9 @@ This project is deployed using:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Author
+## Administrator
 
-- **Your Name** - [GitHub](https://github.com/yourusername)
+- **AYAN** - [GitHub](https://github.com/ayown)
 
 ## Acknowledgments
 
