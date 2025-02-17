@@ -40,7 +40,7 @@ I will be adding more projects in the future. Stay tuned!
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/ayown/PROJECTS.git
    ```
 2. Navigate to a project folder and open `index.html` (for frontend-only projects) or follow setup instructions for full-stack apps.
 
