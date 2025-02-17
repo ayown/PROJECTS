@@ -1,3 +1,4 @@
+// script.js
 let currentInput = "0";
 let currentOperator = null;
 let previousInput = null;
