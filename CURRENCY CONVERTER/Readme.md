@@ -44,9 +44,9 @@ This project is deployed using:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Author
+## Administrator
 
-- **Your Name** - [GitHub](https://github.com/ayown)
+- **AYAN** - [GitHub](https://github.com/ayown)
 
 ## Acknowledgments
 
