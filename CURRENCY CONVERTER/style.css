@@ -37,18 +37,19 @@ form select, button, input{
     justify-content: space-between;
 }
 .select-container img{
-    max-width: 1.5rem;
+    width: 100px;
     /* position: absolute; */
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    top: 100%;
+    /* transform: translateY(-50%); */
 }
 .select-container{
     /* position: relative; */
-    width: 6rem;
+    width: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
 }
 select{
     padding: 10px;
@@ -62,12 +63,14 @@ select{
 .from{
     background-color: #a9a9a9;
     border-radius: 0.5rem;
+    width:200px;
     margin:auto;
     padding: 10px;
 }
 .to{
     background-color: #a9a9a9;
     border-radius: 0.5rem;
+    width:200px;
     margin:auto;
     padding: 10px;
 }
