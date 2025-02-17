@@ -74,7 +74,7 @@ select{
 .msg{
     margin: 2rem 0 2rem 0;
 }
-.butt{
+button{
     background-color: #a9a9a9;
     border-radius: 0.5rem;
     margin:auto;
