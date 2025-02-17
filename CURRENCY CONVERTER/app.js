@@ -1,5 +1,5 @@
 const today = new Date().toISOString().split("T")[0];
-const BASE_URL = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies`;
+const BASE_URL = `https://api.currencyapi.com/v3/latest?apikey=cur_live_nx6pqK8p5dTdVfaBN11rE24vrC0KbYWFWpJr0g1d&date=${today}`;
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
@@ -28,10 +28,6 @@ for (let select of dropdowns) {
 const updateExchangeRate = async () => {
   let amount = document.querySelector(".amount input");
   let amtVal = parseFloat(amount.value);
-  if (isNaN(amtVal) || amtVal < 1) {
-    amtVal = 1;
-    amount.value = "1";
-  }
 
   const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
 
