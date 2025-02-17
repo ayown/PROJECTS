@@ -21,8 +21,8 @@ A simple and responsive currency converter web application built using HTML, CSS
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/currency-converter.git
-cd currency-converter
+git clone https://github.com/ayown/PROJECTS.git
+cd CURRENCY CONVERTER
 ```
 
 ### Open Locally
