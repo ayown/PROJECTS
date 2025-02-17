@@ -1,5 +1,5 @@
 const today = new Date().toISOString().split("T")[0];
-const BASE_URL = `https://api.currencyapi.com/v3/latest?apikey=cur_live_nx6pqK8p5dTdVfaBN11rE24vrC0KbYWFWpJr0g1d&date=${today}`;
+const BASE_URL = `https://api.currencyapi.com/v3/latest?apikey=cur_live_nx6pqK8p5dTdVfaBN11rE24vrC0KbYWFWpJr0g1d`;
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
@@ -29,12 +29,16 @@ const updateExchangeRate = async () => {
   let amount = document.querySelector(".amount input");
   let amtVal = parseFloat(amount.value);
 
-  const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+  if (isNaN(amtVal) || amtVal <= 0) {
+    msg.innerText = "Please enter a valid amount.";
+    return;
+  }
 
   try {
-    console.log(`Fetching data from URL: ${URL}`); // Debugging statement
-    let response = await fetch(URL);
+    console.log(`Fetching data from URL: ${BASE_URL}`); // Debugging statement
+    let response = await fetch(BASE_URL);
     console.log(`Response status: ${response.status}`); // Debugging statement
+
     if (!response.ok) {
       msg.innerText = "Error fetching exchange rates. Please try again.";
       return;
@@ -42,18 +46,21 @@ const updateExchangeRate = async () => {
 
     let data = await response.json();
     console.log("Response data:", data); // Debugging statement
-    if (!data[toCurr.value.toLowerCase()]) {
+    let rates = data.data;
+
+    if (!rates[fromCurr.value] || !rates[toCurr.value]) {
       msg.innerText = "Invalid currency conversion.";
       return;
     }
 
-    let rate = data[toCurr.value.toLowerCase()];
+    let rate = rates[toCurr.value].value / rates[fromCurr.value].value;
     let finalAmount = amtVal * rate;
+
     msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount.toFixed(2)} ${
       toCurr.value
     }`;
   } catch (error) {
-    console.error("Error:", error); // Debugging statement
+    console.error("Error:", error);
     msg.innerText =
       "Something went wrong. Please check your internet connection.";
   }
