@@ -1,53 +1,50 @@
-# My Web Development Projects
+# Calculator
 
-Welcome to my repository! This repo contains all the web development projects I've worked on so far. I will continue adding more projects as I progress in my learning journey.
+A simple web-based calculator built with HTML, CSS, and JavaScript. This calculator can perform basic arithmetic operations such as addition, subtraction, multiplication, and division, along with other standard functions found in a normal calculator.
 
-## 🚀 Projects
+## Features
 
-### 1. Calculator
+- Basic arithmetic operations: Addition, Subtraction, Multiplication, and Division
+- Clear (C) button to reset the calculator
+- Responsive design for different screen sizes
+- User-friendly interface with a modern look
+- Keyboard support for faster input
 
-A simple calculator built using:
+## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- **HTML** - Structure of the calculator
+- **CSS** - Styling and layout
+- **JavaScript** - Functionality and calculations
 
-### 2. Currency Converter
-
-A web app for converting currencies, built with:
-
-- HTML
-- CSS
-- JavaScript
-
-### 3. File-Sharing App
-
-A full-stack file-sharing application developed using:
-
-- HTML
-- CSS
-- JavaScript
-- React.js
-- Node.js
-- Vercel (Frontend deployment)
-- Render (Backend deployment)
-
-## 📌 Upcoming Projects
-
-I will be adding more projects in the future. Stay tuned!
-
-## 💡 How to Use
+## Installation
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/ayown/CALCULATOR.git
    ```
-2. Navigate to a project folder and open `index.html` (for frontend-only projects) or follow setup instructions for full-stack apps.
+2. Navigate to the project directory:
+   ```sh
+   cd calculator
+   ```
+3. Open the `index.html` file in your web browser.
 
-## 📬 Contact
+## Usage
 
-If you have any suggestions or feedback, feel free to reach out!
+1. Open the calculator in a web browser.
+2. Use the buttons to perform calculations.
+3. Press "C" to clear the display.
+4. Use keyboard input for faster calculations.
 
----
+## Future Enhancements
 
-More updates coming soon! 🚀
+- Implement advanced functions (square root, exponentiation, etc.)
+- Add a history feature to track previous calculations
+- Support for scientific calculations
+
+## Contributing
+
+If you would like to contribute, feel free to fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
