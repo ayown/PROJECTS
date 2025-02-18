@@ -4,6 +4,8 @@ A simple web-based calculator built with HTML, CSS, and JavaScript. This calcula
 
 ## Features
 
+![Website Screenshot](WEB.png)
+
 - Basic arithmetic operations: Addition, Subtraction, Multiplication, and Division
 - Clear (C) button to reset the calculator
 - Responsive design for different screen sizes
