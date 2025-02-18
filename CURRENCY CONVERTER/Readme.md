@@ -4,6 +4,8 @@ A simple and responsive currency converter web application built using HTML, CSS
 
 ## Features
 
+![Website Screenshot](WEB.png)
+
 - Fetches live exchange rates using [CurrencyAPI](https://currencyapi.com/)
 - Converts currency values instantly
 - Displays country flags for selected currencies
